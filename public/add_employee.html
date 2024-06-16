@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Employee</h1>
+
+        <form action="/add_employee" method="POST">
+            <div class="row">
+                <div>
+                    <label for="employeeId">Employee ID:</label>
+                    <input type="text" id="employeeId" name="employeeId" required>
+                </div>
+                <div>
+                    <label for="employeeName">Employee Name:</label>
+                    <input type="text" id="employeeName" name="employeeName" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeSalary">Employee Salary:</label>
+                    <input type="number" id="employeeSalary" name="employeeSalary" required>
+                </div>
+                <div>
+                    <label for="employeeDepartment">Employee Department:</label>
+                    <input type="text" id="employeeDepartment" name="employeeDepartment" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeAadhar">Employee Aadhar Card:</label>
+                    <input type="text" id="employeeAadhar" name="employeeAadhar" required>
+                </div>
+                <div>
+                    <label for="employeePancard">Employee Pan Card:</label>
+                    <input type="text" id="employeePancard" name="employeePancard" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeEmail">Employee Email:</label>
+                    <input type="text" id="employeeEmail" name="employeeEmail" required>
+                </div>
+                <div>
+                    <label for="employeeHra">Employee Hra:</label>
+                    <input type="text" id="employeeHra" name="employeeHra" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeTa">Employee Ta:</label>
+                    <input type="text" id="employeeTa" name="employeeTa" required>
+                </div>
+                <div>
+                    <label for="employeeDa">Employee Da:</label>
+                    <input type="text" id="employeeDa" name="employeeDa" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeOther">Employee Other Allowance:</label>
+                    <input type="text" id="employeeOther" name="employeeOther" required>
+                </div>
+                <div>
+                    <label for="employeePfcompany">Employee Pf Company:</label>
+                    <input type="text" id="employeePfcompany" name="employeePfcompany" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeePf">Employee Pf:</label>
+                    <input type="text" id="employeePf" name="employeePf" required>
+                </div>
+                <div>
+                    <label for="employeeGrosssalary">Employee Gross Salary:</label>
+                    <input type="text" id="employeeGrosssalary" name="employeeGrosssalary" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="employeeNetpay">Employee NetPay:</label>
+                    <input type="text" id="employeeNetpay" name="employeeNetpay" required>
+                </div>
+                <div>
+                    <label for="employeeGender"
+                        style="border-color: black; background-color: rgb(177, 176, 236); text-align: center; color: black; padding-left: 10px;">Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="employeeGender" value="male" required>
+
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="employeeGender" value="female" required>
+
+                    <label for="others">Others</label>
+                    <input type="radio" id="others" name="employeeGender" value="others" required>
+                </div>
+            </div>
+            <br>
+            <button type="submit">Add Employee</button>
+        </form>
+    </div>
+</body>
+
+</html>
