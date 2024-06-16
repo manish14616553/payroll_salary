@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to right, #d970e7 0%, #23dfec 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            animation: animateBackground 10s linear infinite alternate;
+        }
+
+        /* @keyframes animateBackground {
+            0% {
+                background-position: left bottom;
+            }
+            100% {
+                background-position: right bottom;
+            }
+        } */
+
+        h1 {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: black; /* Change color to black */
+    animation: text3d 6s infinite alternate, textShadow 6s infinite alternate; /* Add 3D animation and text shadow animation */
+}
+
+@keyframes text3d {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 10px 10px 10px rgb(38, 240, 54); /* No shadow */
+    }
+    50% {
+        text-shadow: 10px 10px 10px rgb(148, 3, 27); /* Add shadow */
+    }
+    100% {
+        text-shadow: 10px 10px 10px rgb(11, 4, 112); /* No shadow */
+    }
+}
+
+
+
+        table {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            border-collapse: collapse;
+            border: 1px solid rgb(139, 174, 240);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        }
+
+
+        th, td {
+            border: 1px solid rgb(5, 0, 14);
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333; /* Dark gray background for table header */
+            color: rgb(44, 231, 7); /* White text color for table header */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #c47df3; /* Alternate row background color */
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button><a href="./index.html">Back</a></button>
+    
+    <h1>Employees List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Department</th>
+                <th>Aadhar Card</th>
+                <th>Pan Card</th>
+                <th>Email</th>
+                <th>HRA</th>
+                <th>TA</th>
+                <th>DA</th>
+                <th>Other Allowance</th>
+                <th>Pf Company</th>
+                <th>Pf Employee</th>
+                <th>Gross Salary</th>
+                <th>NetPay</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% employees.forEach(employee => { %>
+                <tr>
+                    <td><%= employee.id %></td>
+                    <td><%= employee.name %></td>
+                    <td><%= employee.salary %></td>
+                    <td><%= employee.department %></td>
+                    <td><%= employee.aadhar_card %></td>
+                    <td><%= employee.pan_card %></td>
+                    <td><%= employee.email %></td>
+                    <td><%= employee.hra %></td>
+                    <td><%= employee.ta %></td>
+                    <td><%= employee.da %></td>
+                    <td><%= employee.other_allowances %></td>
+                    <td><%= employee.pf_company %></td>
+                    <td><%= employee.pf_employee %></td>
+                    <td><%= employee.gross_salary %></td>
+                    <td><%= employee.net_pay %></td>
+                    <td><%= employee.gender %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

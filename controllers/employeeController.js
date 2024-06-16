@@ -6,9 +6,9 @@ const { encryptValue, decryptValue } = require('../utils/encryption');
 
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'localhost', 
     database: 'contractor',
-    password: process.env.DB_PASSWORD,
+    password: 'manish_123',
     port: '5432',
 });
 
